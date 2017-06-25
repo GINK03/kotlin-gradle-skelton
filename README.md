@@ -15,6 +15,19 @@ When you want to build with installed binary.
 ```consle
 $ gradle run
 ```
+# If you want args
+add these lines to your build.gradle
+```console
+run {
+  if (project.hasProperty('args')) {    // "args" というプロパティが渡されていたら
+    args project.args.split('\\s+')   // 空白文字で split して、 run タスクの args オプションにセットする
+  }
+}
+```
+and, run like this.
+```console
+$ gradle --stacktrace -Pargs="ARE" 2>&1
+```
 
 # When error
 Change open-jdk to oracle-jdk
