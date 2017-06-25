@@ -1,12 +1,12 @@
 # kotlin-gradle-skelton
 コトリンのグレードルを使ったスケルトンです
 
-# gradle install 
+## gradle install 
 ```console
 $ sdk install gradle
 ```
 
-# build 
+## build 
 When you want to build with local binary.
 ```consle
 $ ./gradlew run
@@ -15,7 +15,7 @@ When you want to build with installed binary.
 ```consle
 $ gradle run
 ```
-# If you want args
+## If you want args
 add these lines to your build.gradle
 ```console
 run {
@@ -29,7 +29,7 @@ and, run like this.
 $ gradle --stacktrace -Pargs="ARE" 2>&1
 ```
 
-# When error
+## When error
 Change open-jdk to oracle-jdk
 ```consle
 $ sudo add-apt-repository ppa:webupd8team/java
@@ -40,3 +40,5 @@ change default jdk
 ```console
 $ update-alternatives --config java
 ```
+## You should read
+- [Kotlinx Doc](https://github.com/Kotlin/kotlinx.coroutines/)
